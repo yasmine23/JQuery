@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head> <link rel="stylesheet" href="css/style.css">
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+        
+<!-- Remember to include jQuery :) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    </head>
+    <body>
+        <ul id="nav">
+            <li><a href="./index.html">home</a></li>
+            <li><a href="./courses.html">courses</a></li>
+            <li><a href="./contact.html">contact</a></li>
+        </ul>
+        <p >
+                <div  class="c">
+                        <!-- <img src="bg.jpeg"> -->
+                    <div class="courses">courses</div>
+                    </div>  
+            <center>
+                    <div id="ex1" class="modal">
+                            <p>Thanks for clicking. That felt good.</p>
+                            <a href="#" rel="modal:close">Close</a>
+                          </div>
+             <div class="b">
+                 <div class="course1">
+                     <!-- <img src="3.png"/>  -->
+                    <button ><a href="#ex1" rel="modal:open">View more</a></button>
+                </div>   
+                <div class="course2" >
+                <!-- <img src="4.png"/> -->
+                <button ><a href="#ex1" rel="modal:open">View more</a></button>
+             </div> 
+             <div class="course3">
+                    <!-- <img src="5.png"/> -->
+                    <button ><a href="#ex1" rel="modal:open">View more</a></button>
+              </div>  
+            </div>
+           
+                    <div class="b">
+                            <div class="course4">
+                            <!-- <img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel3.png"/> -->
+                            <button ><a href="#ex1" rel="modal:open">View more</a></button>
+                            </div>
+                            <div class="course5">
+                            <!-- <img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel4.png"/> -->
+                            <button ><a href="#ex1" rel="modal:open">View more</a></button>
+                            </div>
+                            <div class="course6">
+                            <!-- <img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel5.png"/> -->
+                            <button ><a href="#ex1" rel="modal:open">View more</a></button>
+                           </div> 
+                    </div>
+                            <div class="b">
+                                <div class="course7">
+                                    <!-- <img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel6.png"/> -->
+                                    <button ><a href="#ex1" rel="modal:open">View more</a></button>
+                                </div> 
+                                <div class="course8" >
+                                 <!-- <img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel7.png"/> -->
+                                 <button ><a href="#ex1" rel="modal:open">View more</a></button>
+                                </div> 
+                                <div class="course9">
+                                    <!-- <img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel8.png"/> -->
+                                    <button ><a href="#ex1" rel="modal:open">View more</a></button>
+                                 </div>
+                            </div>
+
+                <h4>feedback</h4>
+                <br/>
+                <p>
+                <button onclick="changerBold()">B</button>
+                <button onclick="changerItalic()">I</button>
+                <button onclick="changerUnder()">Underline</button>
+                <select id="taille" onchange="fntaille()">
+                    <option value="20px">20 px</option>
+                    <option value="30px">30 px</option>
+                    <option value="40px">40 px</option>
+                </select>
+                <select id="font" onchange="fnfont()">
+                    <option value="Arial">Arial</option>
+                    <option value="Verdana">Verdana</option>
+                    <option value="Geneva">Geneva</option>
+                </select>
+
+            </p>
+            <p>
+                <textarea id="txt" cols="50"rows="20 "> </textarea>
+            </p>
+           
+        </center>
+        </p>
+    </body>
+    <script src="js/main.js"></script>
+</html>
+
+
+
+<a href="#popupBasic" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">Basic Popup</a>
+<div data-role="popup" id="popupBasic">
+<p>This is GoMyCode Track</p>
+</div>
